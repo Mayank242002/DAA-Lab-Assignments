@@ -10,12 +10,12 @@ void swap(int *x, int *y)
 int comp=0,swaps=0;
 void quick_sort(int arr[],int lb,int ub)
 {
-    int pivot=arr[lb];
-    int i=lb,j=ub;
-
     if (lb>=ub)
        return ;
     else{
+        int pivot=arr[lb];
+        int i=lb,j=ub;
+      
         while (i<j)
         {
             comp++;
@@ -50,13 +50,12 @@ int main()
         quick_sort(arr,0,n-1);
 
         for (int i=0;i<n;i++)
-           cout<<arr[i];
+           cout<<arr[i]<<" ";
 
         cout<<endl<<"Swaps:"<<swaps<<endl;
         cout<<"Comparisions:"<<comp<<endl;
+        swaps=0;
+        comp=0;
     }
-     
-
-
     return 0;
 }
