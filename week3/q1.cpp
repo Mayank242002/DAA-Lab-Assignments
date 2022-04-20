@@ -19,7 +19,7 @@ void insertion_sort(int A[],int n)
         A[j + 1] = x;
     }
     cout<<"Comparisions:"<<comparisions<<endl;
-    cout<<"Shift:"<<shift<<endl;
+    cout<<"Shift:"<<shift+comparisions<<endl;
 
     for (int i=0;i<n;i++)
            cout<<A[i]<<" ";
